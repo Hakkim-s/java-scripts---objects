@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Date object</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		var date1 = new Date();
+		//system Time
+		document.write(date1);
+		document.write("<br/>");
+		document.write(date1.toString());
+		document.write("<br/>");
+		//ISD to UTC/GMT
+        document.write(date1.toUTCString());
+		document.write("<br/>");
+		//Time our creating in int
+		var date2 = new Date(2020,04, 20, 20, 25,59,60)
+		document.write(date2);
+		document.write("<br/>");
+		//standard Time our creating in char
+		var date3 = new Date("mon may 20 1996  25:59:60")
+		document.write(date3);
+		document.write("<br/>");
+		//zero millisecond elapsed
+		var date4 = new Date(0)
+		document.write(date4);
+		document.write("<br/>");
+		//next day using milliseconds
+		var date5 = new Date(1*24*60*60*1000)
+		document.write(date5);
+		document.write("<br/>");
+		//from 1970 as millsec
+		document.write(date1.getTime());
+		document.write("<br/>");
+		document.write(date1.getTimezoneOffset());
+		document.write("<br/>");
+
+
+
+
+	</script>
+</body>
+</html>
